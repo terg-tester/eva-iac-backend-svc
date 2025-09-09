@@ -5,3 +5,5 @@ steps:
   args: ['push', 'gcr.io/${PROJECT_ID}/eva-iac-backend-svc:latest']
 images:
 - 'gcr.io/${PROJECT_ID}/eva-iac-backend-svc:latest'
+options:
+  logging: CLOUD_LOGGING_ONLY
