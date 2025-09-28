@@ -1,0 +1,35 @@
+{
+  "evagApp": {
+    "project": {
+      "home": {
+        "title": "Projects",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Project erstellen",
+        "createOrEditLabel": "Project erstellen oder bearbeiten",
+        "notFound": "Keine Projects gefunden"
+      },
+      "created": "Project erstellt mit ID {{ param }}",
+      "updated": "Project aktualisiert mit ID {{ param }}",
+      "deleted": "Project gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Project {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Project"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "status": "Status",
+      "priority": "Priority",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "createdDate": "Created Date",
+      "lastModifiedDate": "Last Modified Date",
+      "addendum": "Addendum",
+      "deliverable": "Deliverable",
+      "createdBy": "Created By",
+      "artifact": "Artifact"
+    }
+  }
+}

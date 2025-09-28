@@ -1,0 +1,15 @@
+{
+  "evagApp": {
+    "DeliverableType": {
+      "null": "",
+      "TERRAFORM": "TERRAFORM",
+      "ANSIBLE": "ANSIBLE",
+      "PULUMI": "PULUMI",
+      "COOKBOOK": "COOKBOOK",
+      "DOCUMENT_BUNDLE": "DOCUMENT_BUNDLE",
+      "SCRIPT_COLLECTION": "SCRIPT_COLLECTION",
+      "MIXED_PACKAGE": "MIXED_PACKAGE",
+      "OTHER": "OTHER"
+    }
+  }
+}

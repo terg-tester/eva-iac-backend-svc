@@ -1,0 +1,10 @@
+{
+  "evagApp": {
+    "ArtifactStatus": {
+      "null": "",
+      "DRAFT": "DRAFT",
+      "REVIEW": "REVIEW",
+      "FINAL": "FINAL"
+    }
+  }
+}

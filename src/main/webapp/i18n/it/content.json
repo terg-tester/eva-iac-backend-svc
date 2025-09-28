@@ -1,0 +1,26 @@
+{
+  "evagApp": {
+    "content": {
+      "home": {
+        "title": "Contents",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Genera un nuovo Content",
+        "createOrEditLabel": "Genera o modifica un Content",
+        "notFound": "No Contents found"
+      },
+      "created": "&Egrave; stato generato un nuovo Content con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Content identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Content con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Content {{ id }}?"
+      },
+      "detail": {
+        "title": "Content"
+      },
+      "id": "Id",
+      "fileName": "File Name",
+      "dateCreated": "Date Created",
+      "content": "Content"
+    }
+  }
+}

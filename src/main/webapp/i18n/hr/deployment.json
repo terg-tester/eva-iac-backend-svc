@@ -1,0 +1,29 @@
+{
+  "evagApp": {
+    "deployment": {
+      "home": {
+        "title": "Deployments",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Kreirati Deployment",
+        "createOrEditLabel": "Kreirati ili urediti Deployment",
+        "notFound": "Nije nađeno Deployments"
+      },
+      "created": "Kreiran je Deployment sa identifikatorom {{ param }}",
+      "updated": "Ažuriran je Deployment sa identifikatorom {{ param }}",
+      "deleted": "Obrisan je Deployment sa identifikatorom {{ param }}",
+      "delete": {
+        "question": "Da li ste sigurni da želite obrisati Deployment {{ id }}?"
+      },
+      "detail": {
+        "title": "Deployment"
+      },
+      "id": "ID",
+      "deploymentDate": "Deployment Date",
+      "status": "Status",
+      "logs": "Logs",
+      "addendum": "Addendum",
+      "deployedBy": "Deployed By",
+      "deliverable": "Deliverable"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "evagApp": {
+    "deployment": {
+      "home": {
+        "title": "Deployments",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Genera un nuovo Deployment",
+        "createOrEditLabel": "Genera o modifica un Deployment",
+        "notFound": "No Deployments found"
+      },
+      "created": "&Egrave; stato generato un nuovo Deployment con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Deployment identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Deployment con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Deployment {{ id }}?"
+      },
+      "detail": {
+        "title": "Deployment"
+      },
+      "id": "ID",
+      "deploymentDate": "Deployment Date",
+      "status": "Status",
+      "logs": "Logs",
+      "addendum": "Addendum",
+      "deployedBy": "Deployed By",
+      "deliverable": "Deliverable"
+    }
+  }
+}

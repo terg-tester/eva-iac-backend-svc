@@ -1,0 +1,10 @@
+{
+  "evagApp": {
+    "DeploymentStatus": {
+      "null": "",
+      "SUCCESS": "SUCCESS",
+      "FAILED": "FAILED",
+      "IN_PROGRESS": "IN_PROGRESS"
+    }
+  }
+}

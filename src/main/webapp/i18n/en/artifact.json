@@ -1,0 +1,34 @@
+{
+  "evagApp": {
+    "artifact": {
+      "home": {
+        "title": "Artifacts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Artifact",
+        "createOrEditLabel": "Create or edit a Artifact",
+        "notFound": "No Artifacts found"
+      },
+      "created": "A new Artifact is created with identifier {{ param }}",
+      "updated": "A Artifact is updated with identifier {{ param }}",
+      "deleted": "A Artifact is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Artifact {{ id }}?"
+      },
+      "detail": {
+        "title": "Artifact"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "type": "Type",
+      "link": "Link",
+      "status": "Status",
+      "fileSize": "File Size",
+      "createdDate": "Created Date",
+      "lastModifiedDate": "Last Modified Date",
+      "addendum": "Addendum",
+      "uploadedBy": "Uploaded By",
+      "project": "Project"
+    }
+  }
+}

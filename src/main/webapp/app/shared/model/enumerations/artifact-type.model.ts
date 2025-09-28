@@ -1,0 +1,11 @@
+export enum ArtifactType {
+  DOCUMENT = 'DOCUMENT',
+
+  IMAGE = 'IMAGE',
+
+  DIAGRAM = 'DIAGRAM',
+
+  CODE = 'CODE',
+
+  OTHER = 'OTHER',
+}

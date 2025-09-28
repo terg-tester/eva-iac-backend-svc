@@ -1,0 +1,37 @@
+{
+  "evagApp": {
+    "deliverable": {
+      "home": {
+        "title": "Deliverables",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Deliverable erstellen",
+        "createOrEditLabel": "Deliverable erstellen oder bearbeiten",
+        "notFound": "Keine Deliverables gefunden"
+      },
+      "created": "Deliverable erstellt mit ID {{ param }}",
+      "updated": "Deliverable aktualisiert mit ID {{ param }}",
+      "deleted": "Deliverable gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Deliverable {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Deliverable"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "type": "Type",
+      "format": "Format",
+      "status": "Status",
+      "packagePath": "Package Path",
+      "packageSize": "Package Size",
+      "checksum": "Checksum",
+      "createdDate": "Created Date",
+      "lastModifiedDate": "Last Modified Date",
+      "addendum": "Addendum",
+      "deployment": "Deployment",
+      "createdBy": "Created By",
+      "project": "Project"
+    }
+  }
+}

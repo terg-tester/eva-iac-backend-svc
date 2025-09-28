@@ -1,0 +1,95 @@
+{
+  "annotations": {
+    "changelogDate": "20250914142331"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "100",
+      "fieldValidateRulesMinlength": "3"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "500"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "DeliverableType",
+      "fieldValues": "TERRAFORM,ANSIBLE,PULUMI,COOKBOOK,DOCUMENT_BUNDLE,SCRIPT_COLLECTION,MIXED_PACKAGE,OTHER"
+    },
+    {
+      "fieldName": "format",
+      "fieldType": "DeliverableFormat",
+      "fieldValues": "ZIP_ARCHIVE,TAR_GZ,SINGLE_FILE,DIRECTORY_STRUCTURE,CONTAINER_IMAGE"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "DeploymentStatus",
+      "fieldValues": "SUCCESS,FAILED,IN_PROGRESS"
+    },
+    {
+      "fieldName": "packagePath",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "500"
+    },
+    {
+      "fieldName": "packageSize",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "checksum",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "128"
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "lastModifiedDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "addendum",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "4000"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Deliverable",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "deployment",
+      "otherEntityRelationshipName": "deliverable",
+      "relationshipName": "deployment",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "user",
+      "relationshipName": "createdBy",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one",
+      "relationshipWithBuiltInEntity": true
+    },
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "project",
+      "relationshipName": "project",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

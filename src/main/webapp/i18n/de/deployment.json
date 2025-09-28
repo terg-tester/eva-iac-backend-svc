@@ -1,0 +1,29 @@
+{
+  "evagApp": {
+    "deployment": {
+      "home": {
+        "title": "Deployments",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Deployment erstellen",
+        "createOrEditLabel": "Deployment erstellen oder bearbeiten",
+        "notFound": "Keine Deployments gefunden"
+      },
+      "created": "Deployment erstellt mit ID {{ param }}",
+      "updated": "Deployment aktualisiert mit ID {{ param }}",
+      "deleted": "Deployment gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Deployment {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Deployment"
+      },
+      "id": "ID",
+      "deploymentDate": "Deployment Date",
+      "status": "Status",
+      "logs": "Logs",
+      "addendum": "Addendum",
+      "deployedBy": "Deployed By",
+      "deliverable": "Deliverable"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "evagApp": {
+    "project": {
+      "home": {
+        "title": "Projects",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Kreirati Project",
+        "createOrEditLabel": "Kreirati ili urediti Project",
+        "notFound": "Nije nađeno Projects"
+      },
+      "created": "Kreiran je Project sa identifikatorom {{ param }}",
+      "updated": "Ažuriran je Project sa identifikatorom {{ param }}",
+      "deleted": "Obrisan je Project sa identifikatorom {{ param }}",
+      "delete": {
+        "question": "Da li ste sigurni da želite obrisati Project {{ id }}?"
+      },
+      "detail": {
+        "title": "Project"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "status": "Status",
+      "priority": "Priority",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "createdDate": "Created Date",
+      "lastModifiedDate": "Last Modified Date",
+      "addendum": "Addendum",
+      "deliverable": "Deliverable",
+      "createdBy": "Created By",
+      "artifact": "Artifact"
+    }
+  }
+}

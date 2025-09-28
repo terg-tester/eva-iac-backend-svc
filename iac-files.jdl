@@ -1,0 +1,12 @@
+entity Content {
+  id UUID,
+  fileName String required maxlength(255),
+  dateCreated Instant required,
+  content AnyBlob required
+}
+
+dto Content with mapstruct
+service Content with serviceClass
+paginate Content with pagination
+filter Content
+

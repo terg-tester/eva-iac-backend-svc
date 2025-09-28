@@ -1,0 +1,109 @@
+// Enums
+enum ProjectStatus {
+    NEW, IN_PROGRESS, COMPLETED, ARCHIVED
+}
+
+enum ArtifactType {
+    DOCUMENT, IMAGE, DIAGRAM, CODE, OTHER
+}
+
+enum ArtifactStatus {
+    DRAFT, REVIEW, FINAL
+}
+
+enum DeliverableType {
+    TERRAFORM, ANSIBLE, PULUMI, COOKBOOK, DOCUMENT_BUNDLE, SCRIPT_COLLECTION, MIXED_PACKAGE, OTHER
+}
+
+enum DeliverableFormat {
+    ZIP_ARCHIVE, TAR_GZ, SINGLE_FILE, DIRECTORY_STRUCTURE, CONTAINER_IMAGE
+}
+
+enum DeploymentStatus {
+    SUCCESS, FAILED, IN_PROGRESS
+}
+
+enum Priority {
+    LOW, MEDIUM, HIGH, CRITICAL
+}
+
+// Entities
+entity Project {
+    name String required minlength(3) maxlength(100)
+    description String maxlength(500)
+    status ProjectStatus
+    priority Priority
+    startDate Instant
+    endDate Instant
+    createdDate Instant
+    lastModifiedDate Instant
+    addendum String maxlength(4000)
+}
+
+entity Artifact {
+    name String required minlength(3) maxlength(100)
+    description String maxlength(500)
+    type ArtifactType
+    link String maxlength(500)
+    status ArtifactStatus
+    fileSize Long
+    createdDate Instant
+    lastModifiedDate Instant
+    addendum String maxlength(4000)
+}
+
+entity Deliverable {
+    name String required minlength(3) maxlength(100)
+    description String maxlength(500)
+    type DeliverableType
+    format DeliverableFormat
+    status DeploymentStatus
+    packagePath String maxlength(500)
+    packageSize Long
+    checksum String maxlength(128)
+    createdDate Instant
+    lastModifiedDate Instant
+    addendum String maxlength(4000)
+}
+
+entity Deployment {
+    deploymentDate Instant
+    status DeploymentStatus
+    logs TextBlob
+    addendum String maxlength(4000)
+}
+
+// Relationships
+relationship ManyToMany {
+    Project{artifact(name)} to Artifact{project(name)}
+}
+
+relationship OneToMany {
+    Project to Deliverable{project(name)}
+}
+
+relationship OneToMany {
+    Deliverable to Deployment{deliverable(name)}
+}
+
+relationship ManyToOne {
+    Artifact{uploadedBy} to User with builtInEntity
+    Deliverable{createdBy} to User with builtInEntity
+    Deployment{deployedBy} to User with builtInEntity
+    Project{createdBy} to User with builtInEntity
+}
+
+// DTOs for all entities
+dto * with mapstruct
+
+// Pagination
+paginate * with pagination
+
+// Service layer
+service * with serviceImpl
+
+// Search with Elasticsearch
+//search * with elasticsearch
+
+// Filter options
+filter Project, Artifact, Deliverable, Deployment

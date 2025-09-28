@@ -1,0 +1,34 @@
+{
+  "evagApp": {
+    "artifact": {
+      "home": {
+        "title": "Artifacts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Kreirati Artifact",
+        "createOrEditLabel": "Kreirati ili urediti Artifact",
+        "notFound": "Nije nađeno Artifacts"
+      },
+      "created": "Kreiran je Artifact sa identifikatorom {{ param }}",
+      "updated": "Ažuriran je Artifact sa identifikatorom {{ param }}",
+      "deleted": "Obrisan je Artifact sa identifikatorom {{ param }}",
+      "delete": {
+        "question": "Da li ste sigurni da želite obrisati Artifact {{ id }}?"
+      },
+      "detail": {
+        "title": "Artifact"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "type": "Type",
+      "link": "Link",
+      "status": "Status",
+      "fileSize": "File Size",
+      "createdDate": "Created Date",
+      "lastModifiedDate": "Last Modified Date",
+      "addendum": "Addendum",
+      "uploadedBy": "Uploaded By",
+      "project": "Project"
+    }
+  }
+}
